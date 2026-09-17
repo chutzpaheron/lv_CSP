@@ -28,7 +28,7 @@ print(f"the result of 18/4 is {18/4}, or {18//4} with a remainder of {18%4}")
 average = (85+23+69+90+33)/5
 print(f"the average of Those Numbers is {average}")
 
-grades = [85, 99, 78, 92, 65, 92, 90]
+grades = [85, 99, 78, 92, 65, 92, 90] # i assume [brackets] are to start a list?
 students = len(grades)
 average = sum(grades)/students
 print(f"the average grade of Those Students is {int(average)}")
@@ -42,5 +42,6 @@ tax = 0.0485
 sales_tax = float(price) * tax
 total = float(price) + sales_tax
 print(F"the total cost is {total}")
+# oh my god im not gonna remember any of this am i
 
 # float(input()) converts it into float (decimals)
