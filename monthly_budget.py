@@ -51,4 +51,4 @@ total = income - rent - utilities - groceries - transportation - savings
 print(f"you have ${total:.2f} of spending money left over at the end of every month. yayy")
 
 #this is actually really fun when i know what im doing
-#yay
+#yayy
