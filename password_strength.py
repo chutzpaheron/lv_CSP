@@ -29,19 +29,33 @@ for letter in password:
 
 if charactercount == True:
     strength = strength + 1
-    print("your password has over eight characters. 1 point!")
+    print("your password has over eight characters. [1 point!]")
+else:
+      print("your password is under eight characters!")
+
 if upper == True:
     strength = strength + 1
-    print("your password has at least one uppercase letter. 1 point!")
+    print("your password has at least one uppercase letter. [1 point!]")
+else:
+      print("your password is missing uppercase letters!")
+
 if lower == True:
     strength = strength + 1
-    print("your password has at least one lowercase letter. 1 point!")
+    print("your password has at least one lowercase letter. [1 point!]")
+else:
+      print("your password is missing lowercase letters!")
+    
 if numbers == True:
     strength = strength + 1
-    print("your password has at least one number. 1 point!")
+    print("your password has at least one number. [1 point!]")
+else:
+      print("your password is missing numbers!")
+
 if symbols == True:
     strength = strength + 1
-    print("your password has at least one special character. 1 point!")
+    print("your password has at least one special character. [1 point!]")
+else:
+      print("your password is missing symbols!")
 
 if strength == 5:
     print("you have a STRONG password!")
