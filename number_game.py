@@ -2,17 +2,28 @@
 
 import random
 
-guess = int(input("guess a number:"))
-
-
 number = random.randint(1,101)
 guesses = 0
+guess = int(input("guess a number:"))
 
-print(number) #REMOVE
-
-while guesses >= 6:
-    if number == guess:
-        print(f"correct! {number} is the number!")
+while guesses <= 7:
+    if guesses >= 7:
+         print(f"you ran out of tries! the number was {number}!")
+         break
+    elif number < guess:
+        print(f"{guess} is bigger than the number!")
+        guesses = guesses + 1
+        guess = int(input("guess another number:"))
     elif number > guess:
         guesses = guesses + 1
-        print(f"")
+        print(f"{guess} is smaller than the number!")
+        guess = int(input("guess another number:"))
+    else:
+         print(f"correct! {number} is the number!")
+         break
+    
+    
+    
+
+        
+    
