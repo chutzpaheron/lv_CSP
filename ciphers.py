@@ -7,10 +7,18 @@ shift = int(input("by how much is it shifted?:"))
 for character in message:
   if character.islower():
      print(ord(character))
+   
   elif character.isupper():
      print(ord(character))
+     
   else:
     print(ord(character))
+    
+
+if crypt == "E" or crypt == "e":
+   print(f"your encrypted message is {message}")
+else:
+   print(f"your message decrypted is {message}")
 
 #encrypt and decrypt messages in the function
 #write code first, function later
