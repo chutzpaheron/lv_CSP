@@ -17,7 +17,8 @@ for character in message:
 
 if crypt == "E" or crypt == "e":
    print(f"your encrypted message is {message}")
-else:
+
+if crypt == "D" or crypt == "d":
    print(f"your message decrypted is {message}")
 
 #encrypt and decrypt messages in the function

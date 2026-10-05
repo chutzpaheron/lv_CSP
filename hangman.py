@@ -3,28 +3,91 @@
 
 import random
 
-guesses = 0
-word = ""
+with open("words.txt", "r") as file:
+    list = file.read().split(",")
+
+guesses = 6
+word = random.choice(list)
 right = 0
 wrong = 0
+letter = ""
 guess = ""
+max = 6
 
-with open("words.txt", "r") as file:
-    text = file.read
+def display(word, guesses):
+    for letter in word:
+        if letter in guess:
+            print("correct!")
 
 def display_hangman():
-while guesses >= 6:
-    print("""
+ while guesses >= 6:
+     if guesses == 6:
+         print("""
  ______
 |     |   
 |     0
 |    /|\
 |    / \
 |______""")
+         print(f"you ran out of guesses! the word was {word}!")
+     elif guesses == 5:
+         print("""
+ ______
+|     |   
+|     
+|    /|\
+|    / \
+|______""")
+     elif guesses == 4:
+         print("""
+ ______
+|     |   
+|     
+|    / \
+|    / \
+|______""")
+     elif guesses == 3:
+         print("""
+ ______
+|     |   
+|     
+|    / \
+|    / 
+|______""")
+     elif guesses == 2:
+         print("""
+ ______
+|     |   
+|     
+|    / \
+|     
+|______""")
+     elif guesses == 1:
+         print("""
+ ______
+|     |   
+|     
+|    / 
+|     
+|______""")
+     else:
+         print("""
+ ______
+|     |   
+|     
+|     
+|     
+|______""")
+         
+letter = input("hello, welcome to hangman! guess a letter:")
 
-def display(word, guesses):
+while max >= guesses:
     for letter in word:
-        if letter in guess:
+        if letter in word:
+            display += letter
+        else:
+            display += "_ "
+
 
 
 
@@ -54,7 +117,7 @@ def display(word, guesses):
 
 #main loop (while true)
 #show user scaffold (call function)
-#ask uesr to guess
+#ask user to guess
 #check if not letter in word and increase incorrect guesses
 #this increases the body parts somehow
 #check if display word == actual word
