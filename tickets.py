@@ -2,21 +2,34 @@
 #what is a matinee
 #manatee. The Manatee
 
-age = int(input("Enter your age: "))
-matinee = input("Is this a matinee? (yes/no): ").lower()
+def hi():
+    while True:
+        try:
+            amount = int(input("enter your age: "))
+            return amount 
+        except:
+            print("please insert a whole number!")
+
+age = hi()
 
 if age < 5:
     price = 0
-elif age < 12:
+elif age < 13:
     price = 8
 elif age < 65:
     price = 12
 else:
     price = 9
 
-if matinee == "yes":
-    price = price - 3
+matinee = input("are you attending a matinee? (YES or NO): ").lower().strip()
 
-print(f"Ticket price: ${price}")
+while True: #HELP OVER HERE
+    if matinee == "yes":
+        if price == 0:
+          price == price - 0
+    elif matinee == "no":
+     price = price - 3
+    else:
+     print("invalid input!")
 
-#test input(no matinee)     #test input(matinee)
+print(f"the ticket will cost ${price}")

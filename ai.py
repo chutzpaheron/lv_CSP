@@ -8,8 +8,7 @@
 #the most fundamental purpose of ai is to replace humans
 #ai only writes
 #tell ai what you want #improve #test it
-#ai cronies met up with religious leaders to convince them ai is sentient
-#one of them said that if ai is sentient, they are just building slaves
+#if ai is sentient, then arent tech bros just building slaves
 #iterate is loop, change one at a time
 #read code
 #these people would literally bring back slavery if it made them some money
